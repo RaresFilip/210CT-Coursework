@@ -1,0 +1,4 @@
+Total runtime for Week 1 Task 1:
+ 	13 * O(n) + 5 * O(1)
+Total runtime for Week1 Task 2: 
+       5 * O(1) + 2 * (log5(n))

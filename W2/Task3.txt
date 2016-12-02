@@ -1,0 +1,59 @@
+read_mat (n, A)				// O(n^2)
+	for i <- 0 to n
+		for j <- 0 to n
+			READ A[i][j]
+
+mat_addition (n, A, B, C)		// O(n^2)
+	for i <- 0 to n
+		for j <- 0 to n
+			C[i][j] <- A[i][j] + B[i][j]
+
+mat_substraction (n, A, B, C)	// O(n^2)
+	for i <- 0 to n
+		for j <- 0 to n
+			C[i][j] <- A[i][j] - B[i][j]
+
+mat_multiplication (n, A, B, C)	// O(n^3)
+	for i <- 0 to n
+		for j <- 0 to n
+			for k <- 0 to n
+				C[i][j] <- C[i][j] + A[i][k] * B[k][j]
+
+scal_multiplication (n, A, k)	// O(n^2)
+	for i <- 0 to n
+		for j <- 0 to n
+			A[i][j] <- A[i][j] * k
+
+
+write_mat (n, A)				// O(n^2)
+	for i <- 0 to n
+		WRITE “\n”
+		for j <- 0 to n
+			WRITE A[i][j], “ “
+
+MAIN ()
+	INTERGERS n, A[20][20], B[20][20], C[20][20], D[20][20], E[20][20] // O(1)
+
+	WRITE “Insert the order number of the matrices: ”	// O(1)
+	READ n								// O(1)
+
+		for i <- 0 to n
+			for j <-0 to n
+				D[i][j] <- E[i][j] <- 0		// O(n^2)
+
+	WRITE “Insert matrix B: ”, “\n” 				// O(1)
+	read_mat (n, B)							// O(n^2)
+	WRITE “Insert matrix C: ”, “\n”				// O(1)
+	read_mat (n, C)							// O(n^2)
+
+	mat_multiplication (n, B, C, D)				// O(n^3)
+	mat_addition (n, B, C, E)					// O(n^2)
+	scal_multiplication (n, E, 2)				// O(n^2)
+	mat_subtraction (n, D, E, A)					// O(n^2)
+	write_mat (n, A)							// O(n^2)
+
+	RETURN 0								// O(1)
+
+
+
+The total runtime is: O(n^3) + 7*O(n^2) + 6*O(1)

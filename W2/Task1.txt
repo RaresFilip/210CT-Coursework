@@ -1,0 +1,9 @@
+PERFECT (n)
+	m <- 2
+	WHILE n > (m-1)*(m-1)
+		IF n = m*m
+			RETURN m*m
+		IF n < m*m
+			RETURN (m-1)*(m-1)
+		m <- m+1
+
