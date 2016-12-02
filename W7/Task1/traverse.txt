@@ -1,0 +1,14 @@
+The result after DFS: 
+Visited node: 2
+Visited node: 5
+Visited node: 3
+Visited node: 1
+Visited node: 4
+
+The result after BFS: 
+Visited node: 4
+Visited node: 1
+Visited node: 2
+Visited node: 3
+Visited node: 5
+

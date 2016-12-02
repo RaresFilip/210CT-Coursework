@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1480433129 source:c:\users\rares\desktop\task1\main.cpp
+	<iostream>
+
+1480630979 source:d:\uni stuff\210ct\basic, intermediate\w7 (not done)\task1\main.cpp
+	<iostream>
+	<vector>
+
+1480712963 source:d:\uni stuff\210ct\basic, intermediate\w7 (almost done)\task1\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<queue>
+	<stack>
+
