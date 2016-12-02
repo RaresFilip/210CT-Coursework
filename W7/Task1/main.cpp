@@ -146,10 +146,10 @@ void BFS(Node* head, ofstream& file)
 int main()
 {
     Graph* G = new Graph();
-    ofstream file ("traverse.txt", ios::app);
 
     if(G!=NULL)
     {
+        ofstream file ("traverse.txt", ios::app);
         G->theList[0]->addEdge(G->theList[1]); // connecting the first node with the second node
         G->theList[0]->addEdge(G->theList[2]); // connecting the first node with the third node
         G->theList[0]->addEdge(G->theList[3]); // connecting the first node with the forth node
