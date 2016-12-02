@@ -1,0 +1,17 @@
+binary+AF8-interval (arr, length, minInterval, maxInterval)
+	INTEGER left +ADw-- 0							// O(1)
+	INTEGER right +ADw-- length +IBM- 1						// O(1)
+	WHILE left +ImQ- right							// O(logn)
+		INTEGER mid +ADw-- (left +- right) / 2					// O(logn)
+		IF arr of mid +ImU- minInterval AND arr of mid +ImQ- maxInterval		// O(logn)
+			RETURN 1						// O(1)
+		ELSE								// O(logn)
+			IF arr of mid +ADw- minInterval				// O(logn)
+				left +ADw-- mid +- 1					// O(logn)
+			ELSE							// O(logn)
+				IF arr of mid +AD4- maxInterval			// O(logn)
+					right +ADw-- mid +IBM- 1				// O(logn)
+	RETURN 0								// O(1)
+
+
+Total runtime of the function: 4 +ACo- O(1) +- 9 +ACo- O(logn)
