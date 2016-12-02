@@ -1,0 +1,7 @@
+removeVowels (s, i)
+
+	IF i=length(s) OR i=length(s)+1
+		RETURN s
+	WHILE s[i]=”a” OR s[i]=”e” OR s[i]=”i” OR s[i]=”o” OR s[i]=”u” OR s[i]=”A” OR s[i]=”E” OR s[i]=”I” OR s[i]=”O” OR s[i]=”U”
+		Copy s+i+1 to s+i
+	removeVowels (s, i+1)

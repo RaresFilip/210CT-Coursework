@@ -1,0 +1,15 @@
+REVERSE_STRING (sentence)
+	CHARACTER MATRIX listOfWords			// O(1)
+	wordCount <- 0					// O(1)
+	CHARACTER POINTER word				// O(1)
+	word <- address of the word until the space delimiter is met
+// O(1)
+	WHILE word IS NOT NULL				// O(n/2)
+		COPY word to listOfWords		// O(n/2)
+		wordCount <- wordCount + 1		// O(n/2)
+		word <- address of the next word until the space delimiter is met								// O(n/2)
+	FOR  i <- wordCount to 0			// O(n/2)
+		PRINT listOfWords of position in	// O(n/2)
+
+
+Total runtime on this function: 4 * O(1) + 6 * O(n/2)

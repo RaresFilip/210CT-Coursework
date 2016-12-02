@@ -1,0 +1,7 @@
+PRIME (number, div)
+
+	IF number = div
+		RETURN TRUE
+	IF number%div = 0
+		RETURN FALSE
+	PRIME (number, div+1)
