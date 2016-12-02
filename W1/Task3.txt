@@ -1,0 +1,4 @@
+a. Yes my algorithm has both inputs and outputs define as there are messages before one can insert an input and after and output has been printed.
+b. The algorithms are successfully terminated as there are no exceptions thrown and no syntax errors.
+c. The algorithms are clearly executed and explained in the code.
+d. The algorithms have the desired results.
